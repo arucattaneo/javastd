@@ -65,12 +65,12 @@ public class Persona implements Comparable<Persona> {
         return true;
     }
 
-    @Override
+   /* @Override
     public int hashCode() {
         int hash = 3;
         hash = 61 * hash + Objects.hashCode(this.dni);
         return hash;
-    }
+    }*/
 
     @Override
     public int compareTo(Persona o) {
