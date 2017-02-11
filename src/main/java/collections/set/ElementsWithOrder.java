@@ -7,7 +7,6 @@ package collections.set;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.SortedSet;
 import java.util.TreeSet;
 import model.Persona;
 
@@ -38,22 +37,21 @@ public class ElementsWithOrder {
         nombresOrdenados.add("Algo");
         nombresOrdenados.add("Xavier");
         
-        System.out.println("Nombres Ordenadods:");
+        System.out.println("Nombres Ordenados:");
         for (String nombre: nombresOrdenados) {
             System.out.println(nombre);
         }
-        
-        Set<Persona> personasOrdenadas = new TreeSet();
+        //Ordena los nombres por el apellido
+        Set<Persona> personasOrdenadas = new TreeSet(new OrdenApellido());
         personasOrdenadas.add(new Persona("115", "Juan", "Peréz"));
         personasOrdenadas.add(new Persona("110", "Jorge", "López"));
         personasOrdenadas.add(new Persona("100", "Jorge", "Gómez"));
         personasOrdenadas.add(new Persona("113", "Hector", "Peréz"));
 
-        System.out.println("Nombres Ordenadods:");
+        System.out.println("Nombres Ordenados:");
         for (Persona persona: personasOrdenadas) {
             System.out.println(persona);
         }
-        
         
         
         
